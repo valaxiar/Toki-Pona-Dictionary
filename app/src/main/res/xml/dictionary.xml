@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="descriptions">
+        <item>
+            <key>a</key>
+            <value>interjection</value>
+        </item>
+        <item>
+            <key>ala</key>
+            <value>no, nothing</value>
+        </item>
+        <item>
+            <key>alasa</key>
+            <value>to hunt, to gather</value>
+        </item>
+        <item>
+            <key>ale</key>
+            <value>all, every, abundance</value>
+        </item>
+        <item>
+            <key>ali</key>
+            <value>all, everything</value>
+        </item>
+        <item>
+            <key>anpa</key>
+            <value>down, below</value>
+        </item>
+        <item>
+            <key>ante</key>
+            <value>different, change</value>
+        </item>
+        <item>
+            <key>anu</key>
+            <value>or</value>
+        </item>
+        <item>
+            <key>awen</key>
+            <value>to wait, to remain</value>
+        </item>
+        <item>
+            <key>e</key>
+            <value>object marker</value>
+        </item>
+        <item>
+            <key>en</key>
+            <value>and</value>
+        </item>
+        <item>
+            <key>esun</key>
+            <value>market, exchange</value>
+        </item>
+        <item>
+            <key>ijo</key>
+            <value>thing, object</value>
+        </item>
+        <item>
+            <key>ike</key>
+            <value>good, well</value>
+        </item>
+        <item>
+            <key>ilo</key>
+            <value>tool, device</value>
+        </item>
+        <item>
+            <key>insa</key>
+            <value>inside, inner</value>
+        </item>
+        <item>
+            <key>jelo</key>
+            <value>yellow</value>
+        </item>
+        <item>
+            <key>jo</key>
+            <value>to have, to contain</value>
+        </item>
+        <item>
+            <key>kule</key>
+            <value>color</value>
+        </item>
+        <item>
+            <key>kulupu</key>
+            <value>community, group</value>
+        </item>
+        <item>
+            <key>kule</key>
+            <value>color</value>
+        </item>
+        <item>
+            <key>la</key>
+            <value>context marker</value>
+        </item>
+        <item>
+            <key>lape</key>
+            <value>to rest, sleep</value>
+        </item>
+        <item>
+            <key>laso</key>
+            <value>blue</value>
+        </item>
+        <item>
+            <key>lawa</key>
+            <value>head, leader</value>
+        </item>
+        <item>
+            <key>len</key>
+            <value>clothing</value>
+        </item>
+        <item>
+            <key>lete</key>
+            <value>cold</value>
+        </item>
+        <item>
+            <key>li</key>
+            <value>verb marker</value>
+        </item>
+        <item>
+            <key>lon</key>
+            <value>present, to be at</value>
+        </item>
+        <item>
+            <key>luka</key>
+            <value>hand, five</value>
+        </item>
+        <item>
+            <key>lukin</key>
+            <value>to look, to see</value>
+        </item>
+        <item>
+            <key>ma</key>
+            <value>land, earth</value>
+        </item>
+        <item>
+            <key>mama</key>
+            <value>parent, ancestor</value>
+        </item>
+        <item>
+            <key>mani</key>
+            <value>money</value>
+        </item>
+        <item>
+            <key>meli</key>
+            <value>woman</value>
+        </item>
+        <item>
+            <key>mi</key>
+            <value>I, we</value>
+        </item>
+        <item>
+            <key>moku</key>
+            <value>food, to eat</value>
+        </item>
+        <item>
+            <key>moli</key>
+            <value>death, to die</value>
+        </item>
+        <item>
+            <key>monsi</key>
+            <value>back, behind</value>
+        </item>
+        <item>
+            <key>mu</key>
+            <value>animal sound</value>
+        </item>
+        <item>
+            <key>mun</key>
+            <value>moon</value>
+        </item>
+        <item>
+            <key>musi</key>
+            <value>fun, entertainment</value>
+        </item>
+        <item>
+            <key>mute</key>
+            <value>many</value>
+        </item>
+        <item>
+            <key>nanpa</key>
+            <value>number, -th</value>
+        </item>
+        <item>
+            <key>nasa</key>
+            <value>strange, foolish</value>
+        </item>
+        <item>
+            <key>nasin</key>
+            <value>way, path, doctrine</value>
+        </item>
+        <item>
+            <key>nena</key>
+            <value>bump, hill</value>
+        </item>
+        <item>
+            <key>ni</key>
+            <value>this</value>
+        </item>
+        <item>
+            <key>noka</key>
+            <value>foot, leg</value>
+        </item>
+        <item>
+            <key>palisa</key>
+            <value>stick, rod</value>
+        </item>
+        <item>
+            <key>pana</key>
+            <value>to give, to send</value>
+        </item>
+        <item>
+            <key>pi</key>
+            <value>of</value>
+        </item>
+        <item>
+            <key>poka</key>
+            <value>side, beside</value>
+        </item>
+        <item>
+            <key>telo</key>
+            <value>water, liquid</value>
+        </item>
+        <item>
+            <key>tenpo</key>
+            <value>time, period</value>
+        </item>
+        <item>
+            <key>toki</key>
+            <value>speech, language</value>
+        </item>
+        <item>
+            <key>tomo</key>
+            <value>house, building</value>
+        </item>
+        <item>
+            <key>tu</key>
+            <value>two</value>
+        </item>
+        <item>
+            <key>unpa</key>
+            <value>sex, relationship</value>
+        </item>
+        <item>
+            <key>usi</key>
+            <value>to use</value>
+        </item>
+        <item>
+            <key>utala</key>
+            <value>fight, battle</value>
+        </item>
+        <item>
+            <key>walo</key>
+            <value>white</value>
+        </item>
+        <item>
+            <key>walo</key>
+            <value>white</value>
+        </item>
+        <item>
+            <key>wanta</key>
+            <value>one</value>
+        </item>
+        <item>
+            <key>wawa</key>
+            <value>strong, powerful</value>
+        </item>
+        <item>
+            <key>weka</key>
+            <value>away, separate</value>
+        </item>
+        <item>
+            <key>welo</key>
+            <value>yellow</value>
+        </item>
+        <item>
+            <key>wile</key>
+            <value>to want, to need</value>
+        </item>
+    </string-array>
+</resources>

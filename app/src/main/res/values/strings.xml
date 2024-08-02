@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Toki Pona Dictionary</string>
+    <string name="title_activity_word_detail_view">WordDetailView</string>
+</resources>

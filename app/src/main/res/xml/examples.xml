@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="descriptions">
+        <item>
+            <key>a</key>
+            <value>"a!"</value>
+        </item>
+        <item>
+            <key>ala</key>
+            <value>"mi ala wile moku"</value>
+        </item>
+        <item>
+            <key>alasa</key>
+            <value>"mi alasa e kili"</value>
+        </item>
+        <item>
+            <key>ale</key>
+            <value>"ale li lon"</value>
+        </item>
+        <item>
+            <key>ali</key>
+            <value>"ali li pona"</value>
+        </item>
+        <item>
+            <key>anpa</key>
+            <value>"mi tawa anpa"</value>
+        </item>
+        <item>
+            <key>ante</key>
+            <value>"mi lukin ante"</value>
+        </item>
+        <item>
+            <key>anu</key>
+            <value>"mi moku anu mi tawa"</value>
+        </item>
+        <item>
+            <key>awen</key>
+            <value>"mi awen tan tomo mi"</value>
+        </item>
+        <item>
+            <key>e</key>
+            <value>"mi toki e toki pona"</value>
+        </item>
+        <item>
+            <key>en</key>
+            <value>"mi en sina li toki"</value>
+        </item>
+        <item>
+            <key>esun</key>
+            <value>"mi tawa esun"</value>
+        </item>
+        <item>
+            <key>ijo</key>
+            <value>"mi toki e ijo"</value>
+        </item>
+        <item>
+            <key>ike</key>
+            <value>"mi ike"</value>
+        </item>
+        <item>
+            <key>ilo</key>
+            <value>"mi palisa e ilo"</value>
+        </item>
+        <item>
+            <key>insa</key>
+            <value>"mi lon insa tomo mi"</value>
+        </item>
+        <item>
+            <key>jelo</key>
+            <value>"mi moku e jelo"</value>
+        </item>
+        <item>
+            <key>jo</key>
+            <value>"mi jo e kili"</value>
+        </item>
+        <item>
+            <key>kule</key>
+            <value>"mi lukin e kule"</value>
+        </item>
+        <item>
+            <key>kulupu</key>
+            <value>"mi tawa kulupu"</value>
+        </item>
+        <item>
+            <key>la</key>
+            <value>"mi tawa la mi wile moku"</value>
+        </item>
+        <item>
+            <key>lape</key>
+            <value>"mi lape tan ni"</value>
+        </item>
+        <item>
+            <key>laso</key>
+            <value>"mi lukin e laso"</value>
+        </item>
+        <item>
+            <key>lawa</key>
+            <value>"mi lawa e tomo mi"</value>
+        </item>
+        <item>
+            <key>len</key>
+            <value>"mi wile tawa e len"</value>
+        </item>
+        <item>
+            <key>lete</key>
+            <value>"mi tawa lete"</value>
+        </item>
+        <item>
+            <key>li</key>
+            <value>"mi li toki"</value>
+        </item>
+        <item>
+            <key>lon</key>
+            <value>"mi lon tomo mi"</value>
+        </item>
+        <item>
+            <key>luka</key>
+            <value>"mi pali e luka"</value>
+        </item>
+        <item>
+            <key>lukin</key>
+            <value>"mi lukin e tomo"</value>
+        </item>
+        <item>
+            <key>ma</key>
+            <value>"mi tawa ma tomo mi"</value>
+        </item>
+        <item>
+            <key>mama</key>
+            <value>"mi moku e mama mi"</value>
+        </item>
+        <item>
+            <key>mani</key>
+            <value>"mi wile mani"</value>
+        </item>
+        <item>
+            <key>meli</key>
+            <value>"mi wile tawa meli"</value>
+        </item>
+        <item>
+            <key>mi</key>
+            <value>"mi toki"</value>
+        </item>
+        <item>
+            <key>moku</key>
+            <value>"mi moku e kili"</value>
+        </item>
+        <item>
+            <key>moli</key>
+            <value>"mi moku e meli"</value>
+        </item>
+        <item>
+            <key>monsi</key>
+            <value>"mi lon monsi tomo mi"</value>
+        </item>
+        <item>
+            <key>mu</key>
+            <value>"mi tawa mu"</value>
+        </item>
+        <item>
+            <key>mun</key>
+            <value>"mi lukin e mun"</value>
+        </item>
+        <item>
+            <key>musi</key>
+            <value>"mi moku e musi"</value>
+        </item>
+        <item>
+            <key>mute</key>
+            <value>"mi mute"</value>
+        </item>
+        <item>
+            <key>nanpa</key>
+            <value>"mi palisa e nanpa"</value>
+        </item>
+        <item>
+            <key>nasa</key>
+            <value>"mi tawa nasa"</value>
+        </item>
+        <item>
+            <key>nasin</key>
+            <value>"mi toki e nasin"</value>
+        </item>
+        <item>
+            <key>nena</key>
+            <value>"mi lukin e nena"</value>
+        </item>
+        <item>
+            <key>ni</key>
+            <value>"ni li pona"</value>
+        </item>
+        <item>
+            <key>noka</key>
+            <value>"mi lon noka tomo mi"</value>
+        </item>
+        <item>
+            <key>palisa</key>
+            <value>"mi tawa palisa"</value>
+        </item>
+        <item>
+            <key>pana</key>
+            <value>"mi pana e kili"</value>
+        </item>
+        <item>
+            <key>pi</key>
+            <value>"mi toki pi tomo mi"</value>
+        </item>
+        <item>
+            <key>poka</key>
+            <value>"mi lon poka sina"</value>
+        </item>
+        <item>
+            <key>telo</key>
+            <value>"mi moku e telo"</value>
+        </item>
+        <item>
+            <key>tenpo</key>
+            <value>"mi tawa tenpo pona"</value>
+        </item>
+        <item>
+            <key>toki</key>
+            <value>"mi toki e toki pona"</value>
+        </item>
+        <item>
+            <key>tomo</key>
+            <value>"mi lon tomo mi"</value>
+        </item>
+        <item>
+            <key>tu</key>
+            <value>"mi tawa tu"</value>
+        </item>
+        <item>
+            <key>unpa</key>
+            <value>"mi wile unpa"</value>
+        </item>
+        <item>
+            <key>usi</key>
+            <value>"mi tawa usi"</value>
+        </item>
+        <item>
+            <key>utala</key>
+            <value>"mi utala e tomo mi"</value>
+        </item>
+        <item>
+            <key>walo</key>
+            <value>"mi lukin e walo"</value>
+        </item>
+        <item>
+            <key>wawa</key>
+            <value>"mi wawa"</value>
+        </item>
+        <item>
+            <key>weka</key>
+            <value>"mi tawa weka"</value>
+        </item>
+        <item>
+            <key>welo</key>
+            <value>"mi moku e welo"</value>
+        </item>
+        <item>
+            <key>wile</key>
+            <value>"mi wile alasa"</value>
+        </item>
+    </string-array>
+</resources>
