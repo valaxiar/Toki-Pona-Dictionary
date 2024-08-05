@@ -3,5 +3,5 @@ package com.valaxiar.tokiponadictionary
 data class DictionaryUiState(
     val currentWord: String = "",
     val currentDefinition: String = "",
-    val currentExample: String = ""
+    var currentExample: String = "",
 )

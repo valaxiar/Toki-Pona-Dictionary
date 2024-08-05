@@ -1,5 +1,11 @@
 package com.valaxiar.tokiponadictionary
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxHeight
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
@@ -9,14 +15,16 @@ import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontStyle
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
-import com.valaxiar.tokiponadictionary.R
 
 
 val dictionaryViewModel = DictionaryViewModel()
@@ -24,47 +32,72 @@ val dictionaryViewModel = DictionaryViewModel()
 fun DictionaryScreen(navController: NavController) {
     val context = LocalContext.current
     LazyColumn(modifier = Modifier.padding(top = 70.dp)) {
-        item {
-            Text(
-                text = "Toki Pona Dictionary",
-                fontSize = 35.sp,
-                modifier = Modifier.padding(30.dp)
-            )
-        }
         items(dictionaryViewModel.getWordsListSize()) { index ->
-            Card(colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant),
+            Card(
+                colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant),
                 modifier = Modifier
-                    .height(250.dp)
-                    .fillMaxWidth()
-                    .padding(vertical = 10.dp, horizontal = 10.dp)
+                    .height(170.dp)
+                    .fillMaxSize()
+                    .padding(vertical = 10.dp)
                     .clickable {
                         dictionaryViewModel.onCardClick(
                             dictionaryViewModel.wordsList[index],
                             dictionaryViewModel.getDictionaryValueFromXml(
                                 context,
                                 R.xml.dictionary,
-                                dictionaryViewModel.wordsList[index]
+                                dictionaryViewModel.wordsList[index], "definition"
                             ),
                             navController,
                             context
                         )
                     }
             ) {
-
-                Text(
-                    text = dictionaryViewModel.wordsList[index],
-                    fontSize = 60.sp,
-                    modifier = Modifier
-                        .padding(vertical = 16.dp, horizontal = 15.dp),
-                    textAlign = TextAlign.Left,
-                ) 
-                Text(
-                    text =  dictionaryViewModel.getDictionaryValueFromXml(context,R.xml.dictionary,dictionaryViewModel.wordsList[index]),
-                    fontSize = 30.sp,
-                    fontStyle = FontStyle.Italic,
-                    textAlign = TextAlign.Left,
-                    modifier = Modifier.padding(horizontal = 15.dp)
-                )
+                Column(
+                    modifier = Modifier.fillMaxSize(),
+                    verticalArrangement = Arrangement.Center
+                ) {
+                    Row(
+                        verticalAlignment = Alignment.CenterVertically,
+                        modifier = Modifier.fillMaxWidth()
+                    ) {
+                        Image(
+                            painter = painterResource(
+                                dictionaryViewModel.getImageResourceId(
+                                    context,
+                                    dictionaryViewModel.wordsList[index]
+                                )
+                            ),
+                            contentDescription = null,
+                            modifier = Modifier
+                                .height(100.dp)
+                                .fillMaxHeight()
+                                .padding(horizontal = 5.dp)
+                        )
+                        Column {
+                            Text(
+                                text = dictionaryViewModel.wordsList[index],
+                                fontSize = 50.sp,
+                                fontWeight = FontWeight.Bold,
+                                modifier = Modifier
+                                    .padding(horizontal = 15.dp),
+                                textAlign = TextAlign.Left,
+                            )
+                            Text(
+                                text = dictionaryViewModel.getDictionaryValueFromXml(
+                                    context,
+                                    R.xml.dictionary,
+                                    dictionaryViewModel.wordsList[index],
+                                    "definition"
+                                ),
+                                fontSize = 30.sp,
+                                fontStyle = FontStyle.Italic,
+                                fontWeight = FontWeight.Bold,
+                                textAlign = TextAlign.Left,
+                                modifier = Modifier.padding(horizontal = 5.dp, vertical = 5.dp)
+                            )
+                        }
+                    }
+                }
             }
         }
     }

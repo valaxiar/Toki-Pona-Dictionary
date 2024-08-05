@@ -1,5 +1,7 @@
 package com.valaxiar.tokiponadictionary
 
+import android.content.Context
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -18,7 +20,7 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 
 @Composable
-fun WordDetailScreen(navController: NavController, viewModel: DictionaryViewModel){
+fun WordDetailScreen(navController: NavController, viewModel: DictionaryViewModel, context: Context){
     val uiState by viewModel.uiState.collectAsState()
     Column(
         modifier = Modifier.fillMaxSize(),
@@ -47,6 +49,7 @@ fun WordDetailScreen(navController: NavController, viewModel: DictionaryViewMode
             fontWeight = FontWeight.Bold,
             modifier = Modifier
                 .padding(30.dp)
+                .clickable { dictionaryViewModel.onExampleClicked(uiState.currentWord, context, uiState.currentExample) }
         )
             Button(
                 onClick = { dictionaryViewModel.onBackButtonPress(navController) },

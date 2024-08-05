@@ -1,277 +1,459 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string-array name="descriptions">
-        <item>
-            <key>a</key>
-            <value>interjection</value>
-        </item>
-        <item>
-            <key>ala</key>
-            <value>no, nothing</value>
-        </item>
-        <item>
-            <key>alasa</key>
-            <value>to hunt, to gather</value>
-        </item>
-        <item>
-            <key>ale</key>
-            <value>all, every, abundance</value>
-        </item>
-        <item>
-            <key>ali</key>
-            <value>all, everything</value>
-        </item>
-        <item>
-            <key>anpa</key>
-            <value>down, below</value>
-        </item>
-        <item>
-            <key>ante</key>
-            <value>different, change</value>
-        </item>
-        <item>
-            <key>anu</key>
-            <value>or</value>
-        </item>
-        <item>
-            <key>awen</key>
-            <value>to wait, to remain</value>
-        </item>
-        <item>
-            <key>e</key>
-            <value>object marker</value>
-        </item>
-        <item>
-            <key>en</key>
-            <value>and</value>
-        </item>
-        <item>
-            <key>esun</key>
-            <value>market, exchange</value>
-        </item>
-        <item>
-            <key>ijo</key>
-            <value>thing, object</value>
-        </item>
-        <item>
-            <key>ike</key>
-            <value>good, well</value>
-        </item>
-        <item>
-            <key>ilo</key>
-            <value>tool, device</value>
-        </item>
-        <item>
-            <key>insa</key>
-            <value>inside, inner</value>
-        </item>
-        <item>
-            <key>jelo</key>
-            <value>yellow</value>
-        </item>
-        <item>
-            <key>jo</key>
-            <value>to have, to contain</value>
-        </item>
-        <item>
-            <key>kule</key>
-            <value>color</value>
-        </item>
-        <item>
-            <key>kulupu</key>
-            <value>community, group</value>
-        </item>
-        <item>
-            <key>kule</key>
-            <value>color</value>
-        </item>
-        <item>
-            <key>la</key>
-            <value>context marker</value>
-        </item>
-        <item>
-            <key>lape</key>
-            <value>to rest, sleep</value>
-        </item>
-        <item>
-            <key>laso</key>
-            <value>blue</value>
-        </item>
-        <item>
-            <key>lawa</key>
-            <value>head, leader</value>
-        </item>
-        <item>
-            <key>len</key>
-            <value>clothing</value>
-        </item>
-        <item>
-            <key>lete</key>
-            <value>cold</value>
-        </item>
-        <item>
-            <key>li</key>
-            <value>verb marker</value>
-        </item>
-        <item>
-            <key>lon</key>
-            <value>present, to be at</value>
-        </item>
-        <item>
-            <key>luka</key>
-            <value>hand, five</value>
-        </item>
-        <item>
-            <key>lukin</key>
-            <value>to look, to see</value>
-        </item>
-        <item>
-            <key>ma</key>
-            <value>land, earth</value>
-        </item>
-        <item>
-            <key>mama</key>
-            <value>parent, ancestor</value>
-        </item>
-        <item>
-            <key>mani</key>
-            <value>money</value>
-        </item>
-        <item>
-            <key>meli</key>
-            <value>woman</value>
-        </item>
-        <item>
-            <key>mi</key>
-            <value>I, we</value>
-        </item>
-        <item>
-            <key>moku</key>
-            <value>food, to eat</value>
-        </item>
-        <item>
-            <key>moli</key>
-            <value>death, to die</value>
-        </item>
-        <item>
-            <key>monsi</key>
-            <value>back, behind</value>
-        </item>
-        <item>
-            <key>mu</key>
-            <value>animal sound</value>
-        </item>
-        <item>
-            <key>mun</key>
-            <value>moon</value>
-        </item>
-        <item>
-            <key>musi</key>
-            <value>fun, entertainment</value>
-        </item>
-        <item>
-            <key>mute</key>
-            <value>many</value>
-        </item>
-        <item>
-            <key>nanpa</key>
-            <value>number, -th</value>
-        </item>
-        <item>
-            <key>nasa</key>
-            <value>strange, foolish</value>
-        </item>
-        <item>
-            <key>nasin</key>
-            <value>way, path, doctrine</value>
-        </item>
-        <item>
-            <key>nena</key>
-            <value>bump, hill</value>
-        </item>
-        <item>
-            <key>ni</key>
-            <value>this</value>
-        </item>
-        <item>
-            <key>noka</key>
-            <value>foot, leg</value>
-        </item>
-        <item>
-            <key>palisa</key>
-            <value>stick, rod</value>
-        </item>
-        <item>
-            <key>pana</key>
-            <value>to give, to send</value>
-        </item>
-        <item>
-            <key>pi</key>
-            <value>of</value>
-        </item>
-        <item>
-            <key>poka</key>
-            <value>side, beside</value>
-        </item>
-        <item>
-            <key>telo</key>
-            <value>water, liquid</value>
-        </item>
-        <item>
-            <key>tenpo</key>
-            <value>time, period</value>
-        </item>
-        <item>
-            <key>toki</key>
-            <value>speech, language</value>
-        </item>
-        <item>
-            <key>tomo</key>
-            <value>house, building</value>
-        </item>
-        <item>
-            <key>tu</key>
-            <value>two</value>
-        </item>
-        <item>
-            <key>unpa</key>
-            <value>sex, relationship</value>
-        </item>
-        <item>
-            <key>usi</key>
-            <value>to use</value>
-        </item>
-        <item>
-            <key>utala</key>
-            <value>fight, battle</value>
-        </item>
-        <item>
-            <key>walo</key>
-            <value>white</value>
-        </item>
-        <item>
-            <key>walo</key>
-            <value>white</value>
-        </item>
-        <item>
-            <key>wanta</key>
-            <value>one</value>
-        </item>
-        <item>
-            <key>wawa</key>
-            <value>strong, powerful</value>
-        </item>
-        <item>
-            <key>weka</key>
-            <value>away, separate</value>
-        </item>
-        <item>
-            <key>welo</key>
-            <value>yellow</value>
-        </item>
-        <item>
-            <key>wile</key>
-            <value>to want, to need</value>
-        </item>
-    </string-array>
-</resources>
+<dictionary>
+    <item>
+        <key>a</key>
+        <definition>exclamation, expression of surprise or emphasis</definition>
+        <example>mi toki a!</example>
+        <exampletranslation>I'm speaking with surprise!</exampletranslation>
+    </item>
+    <item>
+        <key>akesi</key>
+        <definition>reptile, amphibian</definition>
+        <example>akesi li toki tawa ma.</example>
+        <exampletranslation>The reptile is moving across the land.</exampletranslation>
+    </item>
+    <item>
+        <key>ala</key>
+        <definition>no, none, zero, not</definition>
+        <example>mi ala toki.</example>
+        <exampletranslation>I am not speaking.</exampletranslation>
+    </item>
+    <item>
+        <key>alasa</key>
+        <definition>to hunt, to gather</definition>
+        <example>mi alasa e palisa.</example>
+        <exampletranslation>I am gathering sticks.</exampletranslation>
+    </item>
+    <item>
+        <key>ale</key>
+        <definition>all, every, abundant</definition>
+        <example>ale li pona.</example>
+        <exampletranslation>Everything is good.</exampletranslation>
+    </item>
+    <item>
+        <key>anpa</key>
+        <definition>down, below, low</definition>
+        <example>mi anpa.</example>
+        <exampletranslation>I am low.</exampletranslation>
+    </item>
+    <item>
+        <key>awen</key>
+        <definition>to stay, to wait, to remain</definition>
+        <example>mi awen lon tomo mi.</example>
+        <exampletranslation>I stay at my house.</exampletranslation>
+    </item>
+    <item>
+        <key>e</key>
+        <definition>object marker, introduces the direct object</definition>
+        <example>mi toki e ni.</example>
+        <exampletranslation>I speak about this.</exampletranslation>
+    </item>
+    <item>
+        <key>en</key>
+        <definition>and, with</definition>
+        <example>mi en sina li pona.</example>
+        <exampletranslation>You and I are good.</exampletranslation>
+    </item>
+    <item>
+        <key>esun</key>
+        <definition>market, shop</definition>
+        <example>mi tawa esun.</example>
+        <exampletranslation>I am going to the market.</exampletranslation>
+    </item>
+    <item>
+        <key>ijo</key>
+        <definition>thing, object</definition>
+        <example>mi wile ijo.</example>
+        <exampletranslation>I want something.</exampletranslation>
+    </item>
+    <item>
+        <key>ike</key>
+        <definition>bad, evil, difficult</definition>
+        <example>mi ike.</example>
+        <exampletranslation>I am bad.</exampletranslation>
+    </item>
+    <item>
+        <key>ilo</key>
+        <definition>tool, instrument</definition>
+        <example>mi use e ilo.</example>
+        <exampletranslation>I use a tool.</exampletranslation>
+    </item>
+    <item>
+        <key>insa</key>
+        <definition>inside, stomach</definition>
+        <example>mi toki insa mi.</example>
+        <exampletranslation>I speak from my heart (inner self).</exampletranslation>
+    </item>
+    <item>
+        <key>jaki</key>
+        <definition>dirty, unclean</definition>
+        <example>mi lukin e jaki.</example>
+        <exampletranslation>I see dirt.</exampletranslation>
+    </item>
+    <item>
+        <key>jan</key>
+        <definition>person, human</definition>
+        <example>jan li toki.</example>
+        <exampletranslation>People speak.</exampletranslation>
+    </item>
+    <item>
+        <key>jelo</key>
+        <definition>yellow</definition>
+        <example>mi jo e palisa jelo.</example>
+        <exampletranslation>I have a yellow stick.</exampletranslation>
+    </item>
+    <item>
+        <key>jo</key>
+        <definition>to have, to hold</definition>
+        <example>mi jo e tomo.</example>
+        <exampletranslation>I have a house.</exampletranslation>
+    </item>
+    <item>
+        <key>kala</key>
+        <definition>fish, aquatic animal</definition>
+        <example>kala li tawa.</example>
+        <exampletranslation>The fish is swimming.</exampletranslation>
+    </item>
+    <item>
+        <key>kalama</key>
+        <definition>sound, noise</definition>
+        <example>mi toki kalama.</example>
+        <exampletranslation>I make noise.</exampletranslation>
+    </item>
+    <item>
+        <key>kama</key>
+        <definition>to come, to arrive</definition>
+        <example>mi kama lon tomo mi.</example>
+        <exampletranslation>I arrive at my house.</exampletranslation>
+    </item>
+    <item>
+        <key>kasi</key>
+        <definition>plant, vegetation</definition>
+        <example>kasi li suli.</example>
+        <exampletranslation>The plant is big.</exampletranslation>
+    </item>
+    <item>
+        <key>ken</key>
+        <definition>can, be able to</definition>
+        <example>mi ken toki.</example>
+        <exampletranslation>I can speak.</exampletranslation>
+    </item>
+    <item>
+        <key>kepeken</key>
+        <definition>to use, to employ</definition>
+        <example>mi kepeken e ilo.</example>
+        <exampletranslation>I use a tool.</exampletranslation>
+    </item>
+    <item>
+        <key>kili</key>
+        <definition>fruit, vegetable</definition>
+        <example>mi moku e kili.</example>
+        <exampletranslation>I eat fruit.</exampletranslation>
+    </item>
+    <item>
+        <key>kiwen</key>
+        <definition>hard, solid</definition>
+        <example>kiwen li palisa.</example>
+        <exampletranslation>The stone is a stick (hard object).</exampletranslation>
+    </item>
+    <item>
+        <key>ko</key>
+        <definition>substance, matter</definition>
+        <example>ko li suli.</example>
+        <exampletranslation>The substance is big.</exampletranslation>
+    </item>
+    <item>
+        <key>kon</key>
+        <definition>air, spirit</definition>
+        <example>mi wile kon.</example>
+        <exampletranslation>I want air (or a spiritual connection).</exampletranslation>
+    </item>
+    <item>
+        <key>kule</key>
+        <definition>color</definition>
+        <example>mi wile kule palisa mi.</example>
+        <exampletranslation>I want to color my stick.</exampletranslation>
+    </item>
+    <item>
+        <key>kulupu</key>
+        <definition>community, group</definition>
+        <example>kulupu li toki.</example>
+        <exampletranslation>The community speaks.</exampletranslation>
+    </item>
+    <item>
+        <key>kute</key>
+        <definition>to listen, to hear</definition>
+        <example>mi kute e toki.</example>
+        <exampletranslation>I listen to speech.</exampletranslation>
+    </item>
+    <item>
+        <key>la</key>
+        <definition>context marker, before the main sentence</definition>
+        <example>la mi toki.</example>
+        <exampletranslation>In this context, I speak.</exampletranslation>
+    </item>
+    <item>
+        <key>lape</key>
+        <definition>to sleep, rest</definition>
+        <example>mi lape.</example>
+        <exampletranslation>I am sleeping.</exampletranslation>
+    </item>
+    <item>
+        <key>laso</key>
+        <definition>blue</definition>
+        <example>mi jo e palisa laso.</example>
+        <exampletranslation>I have a blue stick.</exampletranslation>
+    </item>
+    <item>
+        <key>lawa</key>
+        <definition>head, leader, control</definition>
+        <example>mi lawa e tomo mi.</example>
+        <exampletranslation>I control my house.</exampletranslation>
+    </item>
+    <item>
+        <key>len</key>
+        <definition>clothing, garment</definition>
+        <example>mi tawa lon len.</example>
+        <exampletranslation>I go while wearing clothes.</exampletranslation>
+    </item>
+    <item>
+        <key>lete</key>
+        <definition>cold, cool</definition>
+        <example>mi lukin e lete.</example>
+        <exampletranslation>I see coldness (or something cold).</exampletranslation>
+    </item>
+    <item>
+        <key>li</key>
+        <definition>predicate marker for verbs</definition>
+        <example>mi li moku.</example>
+        <exampletranslation>I eat.</exampletranslation>
+    </item>
+    <item>
+        <key>lili</key>
+        <definition>small, little</definition>
+        <example>mi lili.</example>
+        <exampletranslation>I am small.</exampletranslation>
+    </item>
+    <item>
+        <key>linja</key>
+        <definition>line, string, hair</definition>
+        <example>mi jo e linja.</example>
+        <exampletranslation>I have hair.</exampletranslation>
+    </item>
+    <item>
+        <key>loje</key>
+        <definition>red</definition>
+        <example>mi jo e palisa loje.</example>
+        <exampletranslation>I have a red stick.</exampletranslation>
+    </item>
+    <item>
+        <key>lon</key>
+        <definition>at, in, present, true</definition>
+        <example>mi lon tomo mi.</example>
+        <exampletranslation>I am at my house.</exampletranslation>
+    </item>
+    <item>
+        <key>luka</key>
+        <definition>hand, arm, five</definition>
+        <example>mi moku e kili kepeken luka.</example>
+        <exampletranslation>I eat fruit using my hand.</exampletranslation>
+    </item>
+    <item>
+        <key>lukin</key>
+        <definition>to look, to see</definition>
+        <example>mi lukin e tomo mi.</example>
+        <exampletranslation>I see my house.</exampletranslation>
+    </item>
+    <item>
+        <key>ma</key>
+        <definition>land, country, place</definition>
+        <example>mi tawa ma tomo mi.</example>
+        <exampletranslation>I go to my country's place.</exampletranslation>
+    </item>
+    <item>
+        <key>mama</key>
+        <definition>parent, ancestor</definition>
+        <example>mi lon mama mi.</example>
+        <exampletranslation>I am with my parent.</exampletranslation>
+    </item>
+    <item>
+        <key>mani</key>
+        <definition>money, currency</definition>
+        <example>mi wile mani.</example>
+        <exampletranslation>I want money.</exampletranslation>
+    </item>
+    <item>
+        <key>meli</key>
+        <definition>woman, female</definition>
+        <example>meli li toki.</example>
+        <exampletranslation>The woman is speaking.</exampletranslation>
+    </item>
+    <item>
+        <key>mi</key>
+        <definition>I, me</definition>
+        <example>mi moku.</example>
+        <exampletranslation>I eat.</exampletranslation>
+    </item>
+    <item>
+        <key>moku</key>
+        <definition>food, to eat</definition>
+        <example>mi moku e kili.</example>
+        <exampletranslation>I eat fruit.</exampletranslation>
+    </item>
+    <item>
+        <key>monsi</key>
+        <definition>back, rear</definition>
+        <example>mi wile moku lon monsi mi.</example>
+        <exampletranslation>I want to eat at my back (or behind me).</exampletranslation>
+    </item>
+    <item>
+        <key>mute</key>
+        <definition>many, much</definition>
+        <example>mi mute.</example>
+        <exampletranslation>I am many (or numerous).</exampletranslation>
+    </item>
+    <item>
+        <key>namako</key>
+        <definition>spice, flavor</definition>
+        <example>mi moku e namako.</example>
+        <exampletranslation>I eat spices.</exampletranslation>
+    </item>
+    <item>
+        <key>nanpa</key>
+        <definition>number, ordinal</definition>
+        <example>mi toki e nanpa.</example>
+        <exampletranslation>I speak of numbers.</exampletranslation>
+    </item>
+    <item>
+        <key>noka</key>
+        <definition>foot, leg</definition>
+        <example>mi tawa lon noka mi.</example>
+        <exampletranslation>I walk on my legs.</exampletranslation>
+    </item>
+    <item>
+        <key>palisa</key>
+        <definition>stick, rod</definition>
+        <example>mi jo e palisa.</example>
+        <exampletranslation>I have a stick.</exampletranslation>
+    </item>
+    <item>
+        <key>pali</key>
+        <definition>work, activity</definition>
+        <example>mi pali e tomo mi.</example>
+        <exampletranslation>I work on my house.</exampletranslation>
+    </item>
+    <item>
+        <key>pana</key>
+        <definition>to give, to send</definition>
+        <example>mi pana e kili.</example>
+        <exampletranslation>I give fruit.</exampletranslation>
+    </item>
+    <item>
+        <key>poki</key>
+        <definition>container, box</definition>
+        <example>mi jo e poki.</example>
+        <exampletranslation>I have a box.</exampletranslation>
+    </item>
+    <item>
+        <key>pona</key>
+        <definition>good, simple</definition>
+        <example>mi pona.</example>
+        <exampletranslation>I am good.</exampletranslation>
+    </item>
+    <item>
+        <key>pu</key>
+        <definition>interaction with the Toki Pona book</definition>
+        <example>mi toki pu.</example>
+        <exampletranslation>I speak with Toki Pona book.</exampletranslation>
+    </item>
+    <item>
+        <key>sama</key>
+        <definition>same, sibling, other</definition>
+        <example>mi sama sina.</example>
+        <exampletranslation>I am your sibling.</exampletranslation>
+    </item>
+    <item>
+        <key>selo</key>
+        <definition>skin, surface</definition>
+        <example>mi wile e selo mi.</example>
+        <exampletranslation>I want to touch my skin.</exampletranslation>
+    </item>
+    <item>
+        <key>seme</key>
+        <definition>what, which</definition>
+        <example>seme li toki?</example>
+        <exampletranslation>What is speaking?</exampletranslation>
+    </item>
+    <item>
+        <key>suli</key>
+        <definition>big, large</definition>
+        <example>mi suli.</example>
+        <exampletranslation>I am big.</exampletranslation>
+    </item>
+    <item>
+        <key>telo</key>
+        <definition>water, liquid</definition>
+        <example>mi moku e telo.</example>
+        <exampletranslation>I drink water.</exampletranslation>
+    </item>
+    <item>
+        <key>tenpo</key>
+        <definition>time, period</definition>
+        <example>mi toki tenpo suno.</example>
+        <exampletranslation>I speak for a day (time).</exampletranslation>
+    </item>
+    <item>
+        <key>toki</key>
+        <definition>language, speech, to speak</definition>
+        <example>mi toki.</example>
+        <exampletranslation>I speak.</exampletranslation>
+    </item>
+    <item>
+        <key>tonsi</key>
+        <definition>to be intimate, to have a close relationship</definition>
+        <example>mi tonsi sina.</example>
+        <exampletranslation>I am close to you.</exampletranslation>
+    </item>
+    <item>
+        <key>tomo</key>
+        <definition>house, building</definition>
+        <example>mi tawa tomo mi.</example>
+        <exampletranslation>I go to my house.</exampletranslation>
+    </item>
+    <item>
+        <key>utala</key>
+        <definition>fight, conflict</definition>
+        <example>mi utala e palisa.</example>
+        <exampletranslation>I fight with a stick.</exampletranslation>
+    </item>
+    <item>
+        <key>walo</key>
+        <definition>white, light</definition>
+        <example>mi jo e palisa walo.</example>
+        <exampletranslation>I have a white stick.</exampletranslation>
+    </item>
+    <item>
+        <key>wan</key>
+        <definition>single, one</definition>
+        <example>mi wan.</example>
+        <exampletranslation>I am one (single).</exampletranslation>
+    </item>
+    <item>
+        <key>wawa</key>
+        <definition>strong, powerful</definition>
+        <example>mi wawa.</example>
+        <exampletranslation>I am strong.</exampletranslation>
+    </item>
+    <item>
+        <key>weka</key>
+        <definition>away, removed, absent</definition>
+        <example>mi weka.</example>
+        <exampletranslation>I am absent.</exampletranslation>
+    </item>
+    <item>
+        <key>wile</key>
+        <definition>want, need</definition>
+        <example>mi wile moku.</example>
+        <exampletranslation>I want to eat.</exampletranslation>
+    </item>
+</dictionary>
