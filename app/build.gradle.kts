@@ -11,8 +11,8 @@ android {
         applicationId = "com.valaxiar.tokiponadictionary"
         minSdk = 28
         targetSdk = 34
-        versionCode = 1
-        versionName = "1 beta"
+        versionCode = 2
+        versionName = "2 beta"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {

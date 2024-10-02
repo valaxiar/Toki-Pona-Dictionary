@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Toki Pona Dictionary"
 include(":app")
- 
+include(":wearos-app")

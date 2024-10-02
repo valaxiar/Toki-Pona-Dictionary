@@ -3,8 +3,12 @@ package com.valaxiar.tokiponadictionary
 import android.annotation.SuppressLint
 import android.content.Context
 import android.content.res.XmlResourceParser
+import android.widget.Toast
 import androidx.annotation.XmlRes
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.platform.LocalContext
 import androidx.lifecycle.ViewModel
 import androidx.navigation.NavController
@@ -15,11 +19,35 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import org.xmlpull.v1.XmlPullParser
 
-
 class DictionaryViewModel: ViewModel() {
-    val wordsList = listOf(
+
+
+    private val wordsList = listOf(
         "a", "akesi", "ala", "alasa", "ale", "anpa", "awen", "e", "en", "esun", "ijo", "ike", "ilo", "insa", "jaki", "jan", "jelo", "jo", "kala", "kalama", "kama", "kasi", "ken", "kepeken", "kili", "kiwen", "ko", "kon", "kule", "kulupu", "kute", "la", "lape", "laso", "lawa", "len", "lete", "li", "lili", "linja", "loje", "lon", "luka", "lukin", "ma", "mama", "mani", "meli", "mi", "moku","monsi", "mute", "namako", "nanpa", "noka", "palisa", "pali", "pana", "poki", "pona", "pu", "sama", "selo", "seme", "suli", "telo", "tenpo", "toki", "tomo", "utala", "walo", "wan", "wawa", "weka", "wile"
     )
+
+    var currentlySearching by mutableStateOf(false)
+    var textFieldValue by mutableStateOf("")
+
+    fun getWordsList(context: Context, navController: NavController): List<String> {
+        val filteredList = wordsList.filter { it.contains(textFieldValue, ignoreCase = true) }
+        if (filteredList.isEmpty() && currentlySearching) {
+            navController.navigate("noResultsPage")
+            Toast.makeText(context, "No results found", Toast.LENGTH_SHORT).show()
+            return wordsList
+        }
+        return if (currentlySearching) {
+            filteredList
+        } else {
+            wordsList
+        }
+    }
+
+
+    fun updateSearchQuery(query: String){
+        textFieldValue = query
+        currentlySearching = query.isNotEmpty()
+    }
 
     @SuppressLint("DiscouragedApi")
     fun getImageResourceId(context: Context, imageName: String): Int {
@@ -63,6 +91,7 @@ class DictionaryViewModel: ViewModel() {
         val navController = rememberNavController()
         NavHost(navController = navController, startDestination = "home") {
             composable("home") { DictionaryScreen(navController) }
+            composable("noResultsPage") { noSearchResultsView(navController)}
             composable("details") { WordDetailScreen(navController, dictionaryViewModel, LocalContext.current) }
         }
     }

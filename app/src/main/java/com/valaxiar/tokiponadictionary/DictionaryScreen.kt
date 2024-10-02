@@ -14,6 +14,7 @@ import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextField
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -26,12 +27,28 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 
+@Composable
+fun noSearchResultsView(navController: NavController){
+    Text(
+        text = "No results found",
+    )
+}
+
 
 val dictionaryViewModel = DictionaryViewModel()
 @Composable
 fun DictionaryScreen(navController: NavController) {
     val context = LocalContext.current
     LazyColumn(modifier = Modifier.padding(top = 70.dp)) {
+        item {
+            TextField(
+                value = dictionaryViewModel.textFieldValue,
+                onValueChange = { value: String ->
+                    dictionaryViewModel.updateSearchQuery(value)
+                },
+                label = {Text("Search")},
+            )
+        }
         items(dictionaryViewModel.getWordsListSize()) { index ->
             Card(
                 colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant),
@@ -41,11 +58,11 @@ fun DictionaryScreen(navController: NavController) {
                     .padding(vertical = 10.dp)
                     .clickable {
                         dictionaryViewModel.onCardClick(
-                            dictionaryViewModel.wordsList[index],
+                            dictionaryViewModel.getWordsList(context, navController)[index],
                             dictionaryViewModel.getDictionaryValueFromXml(
                                 context,
                                 R.xml.dictionary,
-                                dictionaryViewModel.wordsList[index], "definition"
+                                dictionaryViewModel.getWordsList(context, navController)[index], "definition"
                             ),
                             navController,
                             context
@@ -64,7 +81,7 @@ fun DictionaryScreen(navController: NavController) {
                             painter = painterResource(
                                 dictionaryViewModel.getImageResourceId(
                                     context,
-                                    dictionaryViewModel.wordsList[index]
+                                    dictionaryViewModel.getWordsList(context, navController)[index]
                                 )
                             ),
                             contentDescription = null,
@@ -75,7 +92,7 @@ fun DictionaryScreen(navController: NavController) {
                         )
                         Column {
                             Text(
-                                text = dictionaryViewModel.wordsList[index],
+                                text = dictionaryViewModel.getWordsList(context, navController)[index],
                                 fontSize = 50.sp,
                                 fontWeight = FontWeight.Bold,
                                 modifier = Modifier
@@ -86,7 +103,7 @@ fun DictionaryScreen(navController: NavController) {
                                 text = dictionaryViewModel.getDictionaryValueFromXml(
                                     context,
                                     R.xml.dictionary,
-                                    dictionaryViewModel.wordsList[index],
+                                    dictionaryViewModel.getWordsList(context, navController)[index],
                                     "definition"
                                 ),
                                 fontSize = 30.sp,
