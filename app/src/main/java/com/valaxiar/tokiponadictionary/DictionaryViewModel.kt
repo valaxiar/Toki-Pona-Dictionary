@@ -26,7 +26,7 @@ class DictionaryViewModel: ViewModel() {
         "a", "akesi", "ala", "alasa", "ale", "anpa", "awen", "e", "en", "esun", "ijo", "ike", "ilo", "insa", "jaki", "jan", "jelo", "jo", "kala", "kalama", "kama", "kasi", "ken", "kepeken", "kili", "kiwen", "ko", "kon", "kule", "kulupu", "kute", "la", "lape", "laso", "lawa", "len", "lete", "li", "lili", "linja", "loje", "lon", "luka", "lukin", "ma", "mama", "mani", "meli", "mi", "moku","monsi", "mute", "namako", "nanpa", "noka", "palisa", "pali", "pana", "poki", "pona", "pu", "sama", "selo", "seme", "suli", "telo", "tenpo", "toki", "tomo", "utala", "walo", "wan", "wawa", "weka", "wile"
     )
 
-    var currentlySearching by mutableStateOf(false)
+    private var currentlySearching by mutableStateOf(false)
     var textFieldValue by mutableStateOf("")
 
     fun getWordsList(context: Context, navController: NavController): List<String> {
@@ -91,7 +91,7 @@ class DictionaryViewModel: ViewModel() {
         val navController = rememberNavController()
         NavHost(navController = navController, startDestination = "home") {
             composable("home") { DictionaryScreen(navController) }
-            composable("noResultsPage") { noSearchResultsView(navController)}
+            composable("noResultsPage") { NoSearchResultsView(navController)}
             composable("details") { WordDetailScreen(navController, dictionaryViewModel, LocalContext.current) }
         }
     }
