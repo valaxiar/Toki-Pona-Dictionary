@@ -26,11 +26,11 @@ class DictionaryViewModel: ViewModel() {
         "a", "akesi", "ala", "alasa", "ale", "anpa", "awen", "e", "en", "esun", "ijo", "ike", "ilo", "insa", "jaki", "jan", "jelo", "jo", "kala", "kalama", "kama", "kasi", "ken", "kepeken", "kili", "kiwen", "ko", "kon", "kule", "kulupu", "kute", "la", "lape", "laso", "lawa", "len", "lete", "li", "lili", "linja", "loje", "lon", "luka", "lukin", "ma", "mama", "mani", "meli", "mi", "moku","monsi", "mute", "namako", "nanpa", "noka", "palisa", "pali", "pana", "poki", "pona", "pu", "sama", "selo", "seme", "suli", "telo", "tenpo", "toki", "tomo", "utala", "walo", "wan", "wawa", "weka", "wile"
     )
 
-    var currentlySearching by mutableStateOf(false)
+    private var currentlySearching by mutableStateOf(false)
     var textFieldValue by mutableStateOf("")
     var resultsFound by mutableStateOf(true)
 
-    fun getWordsList(context: Context, navController: NavController): List<String> {
+    fun getWordsList(context: Context): List<String> {
         currentlySearching = textFieldValue.isNotBlank()
         val filteredList = wordsList.filter { it.contains(textFieldValue, ignoreCase = true) }
 
@@ -60,9 +60,6 @@ class DictionaryViewModel: ViewModel() {
 
     private val _uiState = MutableStateFlow(DictionaryUiState())
     val uiState: StateFlow<DictionaryUiState> get() = _uiState
-    fun getWordsListSize(): Int {
-        return wordsList.size
-    }
 
     fun onCardClick(word: String, def: String, navController: NavController, context: Context) {
         _uiState.value = _uiState.value.copy(currentDefinition = def)
