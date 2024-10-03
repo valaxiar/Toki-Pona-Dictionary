@@ -26,22 +26,26 @@ class DictionaryViewModel: ViewModel() {
         "a", "akesi", "ala", "alasa", "ale", "anpa", "awen", "e", "en", "esun", "ijo", "ike", "ilo", "insa", "jaki", "jan", "jelo", "jo", "kala", "kalama", "kama", "kasi", "ken", "kepeken", "kili", "kiwen", "ko", "kon", "kule", "kulupu", "kute", "la", "lape", "laso", "lawa", "len", "lete", "li", "lili", "linja", "loje", "lon", "luka", "lukin", "ma", "mama", "mani", "meli", "mi", "moku","monsi", "mute", "namako", "nanpa", "noka", "palisa", "pali", "pana", "poki", "pona", "pu", "sama", "selo", "seme", "suli", "telo", "tenpo", "toki", "tomo", "utala", "walo", "wan", "wawa", "weka", "wile"
     )
 
-    private var currentlySearching by mutableStateOf(false)
+    var currentlySearching by mutableStateOf(false)
     var textFieldValue by mutableStateOf("")
+    var resultsFound by mutableStateOf(true)
 
     fun getWordsList(context: Context, navController: NavController): List<String> {
+        currentlySearching = textFieldValue.isNotBlank()
         val filteredList = wordsList.filter { it.contains(textFieldValue, ignoreCase = true) }
-        if (filteredList.isEmpty() && currentlySearching) {
-            navController.navigate("noResultsPage")
-            Toast.makeText(context, "No results found", Toast.LENGTH_SHORT).show()
-            return wordsList
+
+        resultsFound = filteredList.isNotEmpty()
+
+        if (!resultsFound) {
+            if (currentlySearching) {
+                Toast.makeText(context, "No results found", Toast.LENGTH_SHORT).show()
+            }
+            return emptyList()
         }
-        return if (currentlySearching) {
-            filteredList
-        } else {
-            wordsList
-        }
+
+        return filteredList
     }
+
 
 
     fun updateSearchQuery(query: String){
@@ -91,7 +95,6 @@ class DictionaryViewModel: ViewModel() {
         val navController = rememberNavController()
         NavHost(navController = navController, startDestination = "home") {
             composable("home") { DictionaryScreen(navController) }
-            composable("noResultsPage") { NoSearchResultsView(navController)}
             composable("details") { WordDetailScreen(navController, dictionaryViewModel, LocalContext.current) }
         }
     }
